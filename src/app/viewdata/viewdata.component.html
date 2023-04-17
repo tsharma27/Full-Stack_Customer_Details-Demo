@@ -1,0 +1,22 @@
+<div align = "center">
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Cust ID</th>
+                <th>Cust Name</th>
+                <th>Cust Order Price</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let d of data">
+                <td>{{d.custid}}</td>
+                <td>{{d.custname}}</td>
+                <td>{{d.custprice}}</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</div>

@@ -1,0 +1,17 @@
+<div align="center" >
+    <h2>Update</h2>
+    <form #updateform="ngForm" (ngSubmit)="updatecustdata(updateform)">
+
+        <label for="custid">Please enter the Cust ID wose details you want to update:- </label>
+        <input type="number" name="custid" id="custid" #custid (ngModel)="custid" ><br><br>
+
+        <label for="custname">Cust Name:- </label>
+        <input type="text" name="custname" id="custname" #custname (ngModel)="custname" ><br><br>
+
+        <label for="custprice">Cust Order Price</label>
+        <input type="number" name="custprice" id="custprice" #custprice (ngModel)="custprice" ><br><br>
+
+        <input type="submit" value="Update">
+
+    </form>
+</div>
